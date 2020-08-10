@@ -1,0 +1,966 @@
+
+<!DOCTYPE HTML >
+<html  lang="ja-JP-Q22019">
+ <head>
+  <title>Blackboard Learn</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta id="request-method" name="request-method" content="GET">
+  <meta name="author" content="Blackboard">
+  <meta name="copyright" content="&copy; 1997-2020 Blackboard Inc. All Rights Reserved. U.S. Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.">
+  <meta name="keywords" content="Blackboard">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="/ui/bb-icon2.ico">
+     <link rel="stylesheet" type="text/css" href="/common/shared.css?v=3700.0.7-rel.21+54e64bd" id="css_0">
+     <link rel="stylesheet" type="text/css" href="/branding/themes/as_2016_kosen_6/theme.css?v=3700.0.7-rel.21+54e64bd" id="css_1">
+     <link rel="stylesheet" type="text/css" href="/branding/themes/as_2016_kosen_6/app_nav.css?v=3700.0.7-rel.21+54e64bd" id="css_2">
+     <link rel="stylesheet" type="text/css" href="/colorpalettes/sky/generated/colorpalette.generated.modern.css?v=3700.0.7-rel.21+54e64bd" id="css_3">
+     <link rel="stylesheet" type="text/css" href="/webapps/videointegration/css/video-integration.css?v=3700.0.7-rel.21+54e64bd_3700.0.7-rel.21+54e64bd" id="css_4">
+          <style type="text/css">
+/* Custom styles go here */
+#loginRedirectProviders button {
+  display:none;
+}
+.login-page #copyright {
+  bottom: -200px !important;
+}
+.login-page #copyright .logo {
+  background: inherit !important;
+  display: block !important;
+}
+</style>
+
+       <link rel="stylesheet" type="text/css" media="print" href="/ui/styles/print.css?v=3700.0.7-rel.21+54e64bd">
+    <script type="text/javascript" src="/javascript/i18n.js?v=3700.0.7-rel.21+54e64bd"></script>
+      <script language='javascript' type='text/javascript'>
+
+var JS_RESOURCES = new Object();
+
+function _init_bundle_JS_RESOURCES() {
+
+    JS_RESOURCES['validation.email'] = '完全なEメールアドレス (例 : info@blackboard.com) を入力する必要があります。';
+    JS_RESOURCES['validation.radio.required'] = '選択して続行します。';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited.survey'] = '次の質問に完全に回答していない可能性があります。\n {0}\nアンケートに戻るには[キャンセル]をクリックします。未完了の回答を保存するには[OK]をクリックします。';
+    JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+    JS_RESOURCES['active.filter.search.terms'] = '用語の検索';
+    JS_RESOURCES['validation.points.decimal.places.error.location'] = '点数は小数点5桁までに制限されています : {0}';
+    JS_RESOURCES['validation.maximum_length.plural'] = '{1} 文字までしか入力できません : {0}\n入力サイズを {2} 文字に減らします。';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited'] = '次の質問に完全に回答していない可能性があります。\n {0}\nテストに戻るには[キャンセル]をクリックします。未完了の回答を保存するには[OK]をクリックします。';
+    JS_RESOURCES['validation.multiSelect.minItems'] = 'マルチリストボックスの項目の数を {0} 以上にする必要があります。';
+    JS_RESOURCES['validation.cmp_field.required'] = '値を {0} に指定する必要があります\n{1} フィールドが空でない場合は、';
+    JS_RESOURCES['warning.email'] = 'Eメールアドレスは推奨フィールドです。Eメールアドレスがないと、システムの一部が使用できなくなることがあります。';
+    JS_RESOURCES['validation.maximum_length.no_name.singular'] = '最大文字数は {0} です。\n1つの文字により入力サイズを減らしてください。';
+    JS_RESOURCES['validation.multiSelect.maxItems'] = 'マルチリストボックスの項目の数が {0} を超えないようにする必要があります。';
+    JS_RESOURCES['validation.number'] = '有効な数値を入力する必要があります: {0}';
+    JS_RESOURCES['portalmodule.section.remove'] = '{0} を削除しますか？';
+    JS_RESOURCES['show.helptext'] = 'ヘルプテキストの表示';
+    JS_RESOURCES['validation.date.required'] = '完全な日付の値を {0} に指定する必要があります。';
+    JS_RESOURCES['validation.password'] = 'パスワードは省略したり、スペースのみを含めることはできません。';
+    JS_RESOURCES['validation.mismatch'] = '入力した値が一致しません : {0}\n確認 : {0}';
+    JS_RESOURCES['validation.percent'] = '0 - 100の有効なパーセント値を入力する必要があります。';
+    JS_RESOURCES['validation.maximum_length.no_name.plural'] = '最大文字数は {0} です。\n{1} 文字により入力サイズを減らしてください。';
+    JS_RESOURCES['field_name.substitute'] = '「{0}」入力フィールド';
+    JS_RESOURCES['validation.invalid_value'] = '入力した数値は無効です : {0}';
+    JS_RESOURCES['validation.required'] = '値を入力してください : {0}';
+    JS_RESOURCES['validate.alignment.missing.content'] = '配置を選択しましたが、配置可能なコピー対象コンテンツを選択しませんでした。';
+    JS_RESOURCES['active.filter.free.form.text.blank'] = '検索テキストフィールドに値を指定してください';
+    JS_RESOURCES['validation.system_role.reserve'] = '｢bb｣は、ロールIDの先頭には使用できません。';
+    JS_RESOURCES['validation.date_past'] = '終了日を開始日より前に設定することはできません。';
+    JS_RESOURCES['confirm.delete_item_value'] = 'この項目 {0} は削除されます。続行しますか？';
+    JS_RESOURCES['validation.invalid_chars'] = '{0} に無効な文字が含まれています。\n文字「{1}」を削除してください。';
+    JS_RESOURCES['hide.helptext'] = 'ヘルプテキストの非表示';
+    JS_RESOURCES['validate.range.lessthen.str'] = '{0} 未満';
+    JS_RESOURCES['validate.login.invalid.username.or.pass'] = 'ユーザ名およびパスワードを入力してください。';
+    JS_RESOURCES['validation.date_past.confirm'] = 'これは過去の時間です。\nこの時間で続行しますか？';
+    JS_RESOURCES['validation.negative'] = '有効な負ではない値を入力する必要があります : {0}';
+    JS_RESOURCES['validation.url'] = '有効なURL (例 : http://www.myschool.edu) を入力する必要があります。';
+    JS_RESOURCES['validate.range.overlap'] = '基準 ({0}) は基準 ({1}) と重複しています。';
+    JS_RESOURCES['validate.range.between.str'] = '{0} と {1} の間';
+    JS_RESOURCES['validation.portal.tool.items.remove'] = '{0} を削除しますか？';
+    JS_RESOURCES['validation.association.refresh.confirm'] = '関連付けられた項目の情報が更新されている可能性があります。\n[OK]をクリックしてリストを最新の情報に更新するか、[キャンセル]をクリックしてこのページの作業を続行します。';
+    JS_RESOURCES['validate.enrolloptions.error.codeconflict'] = '[アクセスコード登録]オプションが {instructor} 主導登録の選択と矛盾します。';
+    JS_RESOURCES['validation.points.decimal.places'] = '点数は小数点5桁までに制限されています。';
+    JS_RESOURCES['list.checkToSelectAllItems'] = 'オンにして、すべての項目を選択します';
+    JS_RESOURCES['validation.option.required'] = '少なくとも1つのオプションをリストから選択してください。';
+    JS_RESOURCES['active.filter.changed.alert'] = '現在の基準の内容';
+    JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = '名前を指定して、再利用可能なオブジェクトとして保存します。';
+    JS_RESOURCES['validate.invalidate.number'] = '{0} ではなく、有効な数値を入力してください。';
+    JS_RESOURCES['validation.valid_course_id'] = 'コースIDには無効な文字またはマルチバイト文字が含まれています。';
+    JS_RESOURCES['assessment.incomplete.confirm'] = '次の質問に完全に回答していない可能性があります。\n {0}\nテストに戻るには[キャンセル]をクリックします。このアセスメントを送信するには、[OK]をクリックします。';
+    JS_RESOURCES['validate.enrolloptions.error.nooption'] = '警告 : {instructor} 主導または[自己登録]オプションを選択してください。';
+    JS_RESOURCES['validation.date_equal'] = '開始日は終了日と同じにはできません。';
+    JS_RESOURCES['validation.cmp_field.rejected'] = '{0} は対応する {1} 値がないと使用できません。';
+    JS_RESOURCES['validation.time.required'] = '完全な時刻の値を {0} に指定する必要があります。';
+    JS_RESOURCES['validation.integer_number'] = '有効な整数値を入力する必要があります : {0}';
+    JS_RESOURCES['validation.maximum_length'] = '255文字までしか入力できません';
+    JS_RESOURCES['validate.enrolloptions.error.emailrequestconflict'] = '選択されたEメール登録オプションが自己登録の選択と矛盾します。';
+    JS_RESOURCES['validate.range.morethen.str'] = '{0} を超える';
+    JS_RESOURCES['invalid_char.space'] = 'スペース';
+    JS_RESOURCES['notification.submit'] = 'アクションは既に送信されています。\nアクションが完了するまでしばらくお待ちください。';
+    JS_RESOURCES['validation.plain_text.confirm'] = 'この文書内に数式を正しく表示するには、[スマートテキスト]または[HTML]形式選択する必要があります。\n選択した[プレーンテキスト]形式で保存するには、[OK]をクリックします。新しい形式を選択するには[キャンセル]をクリックします。';
+    JS_RESOURCES['validation.allow_negtive.percent'] = '-100 - 100の有効なパーセント値を入力する必要があります。';
+    JS_RESOURCES['invalid_char.comma'] = 'カンマ';
+    JS_RESOURCES['confirm.remove_item'] = 'この操作は最終的なもので、元に戻せません。続行しますか？';
+    JS_RESOURCES['list.uncheckToDeselectAllItems'] = 'オフにして、すべての項目を選択解除します';
+    JS_RESOURCES['validation.maximum_length.singular'] = '{1} 文字までしか入力できません: {0}\n入力サイズを1文字に減らします。';
+    JS_RESOURCES['validation.rubric.decimalplaces'] = '小数点の桁数が多すぎます。最大は5桁です。';
+    JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = '再利用可能なオブジェクトの場所を指定します。';
+    JS_RESOURCES['validation.minimum_length'] = '少なくとも {0} 文字を入力する必要があります : {1}';
+    JS_RESOURCES['assessment.incomplete.confirm.survey'] = '次の質問に完全に回答していない可能性があります。\n {0}\nアンケートに戻るには[キャンセル]をクリックします。このアセスメントを送信するには、[OK]をクリックします。';
+    JS_RESOURCES['validation.image_type'] = '不明な画像タイプ : {0} 画像が正しく表示されない可能性があります。';
+    JS_RESOURCES['validate.invalidate.number.space'] = 'スペース';
+
+    JS_RESOURCES.getString = i18n_get_string;
+    JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_JS_RESOURCES();
+
+</script>
+<script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'yy/MM/dd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'yyyy年M月';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^(([0-9]{1,3}(\\,[0-9]{3})*)|[0-9]*)(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{3} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = '日 月 火 水 木 金 土';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'yyyy年M月d日{ \'&#8212;\' [yyyy年][M月]d}日';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = '1月 2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {3} {2} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'ようこそ、{3} {1}さん';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = '1 2 3 4 5 6 7 8 9 10 11 12';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'M月d日 (ddd)';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'YMD';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = '日 月 火 水 木 金 土';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '0';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '0';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'yyyy年M月d日 (dddd)';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = '日曜日 月曜日 火曜日 水曜日 木曜日 金曜日 土曜日';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'YY/MM/DD';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'M月d日 (dddd)';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+      <script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'yy/MM/dd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'yyyy年M月';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^(([0-9]{1,3}(\\,[0-9]{3})*)|[0-9]*)(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{3} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = '日 月 火 水 木 金 土';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'yyyy年M月d日{ \'&#8212;\' [yyyy年][M月]d}日';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = '1月 2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {3} {2} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'ようこそ、{3} {1}さん';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = '1 2 3 4 5 6 7 8 9 10 11 12';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'M月d日 (ddd)';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3} {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'YMD';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = '日 月 火 水 木 金 土';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '0';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '0';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'yyyy年M月d日 (dddd)';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = '日曜日 月曜日 火曜日 水曜日 木曜日 金曜日 土曜日';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'YY/MM/DD';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'M月d日 (dddd)';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+         <script type="text/javascript" src="/javascript/cdn.js"></script>
+    <script type="text/javascript" src="/groupjs/B413D1AFF93489BD1762766C7844A805.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/login/dwr_open/interface/UserDataDWRFacade.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/login/dwr_open/interface/MashupDWRFacade.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/groupjs/3FFE8CBBA6875D126F17F361A3FD6EF2.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/privacy-disclosure/js/cookieConsent.js?v=3700.0.7-rel.21+54e64bd_3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/groupjs/0CE7F489EEA27ACCBD0B9E4DA2C535A8.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/javascript/dwr/engine.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/javascript/dwr/util.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/groupjs/DFB31972B3CFBF85716187007FC21DF0.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/login/dwr_open/interface/UserDWRFacade.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/portal/overlay/welcomeOverlay.js?v=3700.0.7-rel.21+54e64bd_3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/login/dwr_open/interface/ToolActivityService.js?v=3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/bb-gate-bb_bb60/js/tool_service.js?v=3700.0.7-rel.21+54e64bd_3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/bb-social-learning-bb_bb60/js/social.js?v=3700.0.7-rel.21+54e64bd_3700.0.7-rel.21+54e64bd"></script>
+    <script type="text/javascript" src="/webapps/login/dwr_open/interface/ProfileProviderService.js?v=3700.0.7-rel.21+54e64bd"></script>
+    </head>
+  <body id="learn-oe-body" class='login-page'>
+  <div id="globalNavPageContentArea">
+
+  <div id="loginPageContainer">
+
+    <div id="loginPane">
+
+    <div id="loginContainer">
+      <div id="loginHeader" class="clearfix">
+        <h1 class="hideoff">Blackboard Learn &#8482;</h1>
+        <img src="/images/ci/logos/Bb_newLogo_060.png" alt="Blackboard Learn &#8482;" class="productLogo" />
+        
+<h2 class="hideoff">オプションの表示</h2>
+<ul>
+  <li class="font-size">
+    <img src="/images/ci/ng/fonts.gif" alt="" /> 
+    <a href="#" title="テキストサイズの変更" 
+          onClick="page.showChangeTextSizeHelp()">テキストサイズの変更</a>
+  </li>
+  <li class="contrast">
+    <img src="/images/ci/ng/contrast.gif" alt="" /> 
+    <a href="#" title="ハイコントラスト設定" onclick="page.showAccessibilityOptions(); return false;">ハイコントラスト設定</a>
+  </li>
+</ul>
+</div>
+
+      <div id="loginLang" class="clearfix">
+        
+  <form action="/webapps/portal/execute/changeLocale" method="post" name="locale_picker" target="_top">
+  
+      <script>
+      function loadLocale(code)
+      {
+        document.locale_picker.locale.value = code;
+        document.locale_picker.submit();
+      }
+      FastInit.addOnLoad( function() {
+        Event.observe( $( 'loginLang' ), 'mouseover', function( event )
+        {
+          $( 'langMenu' ).setAttribute( "aria-hidden", "false" );
+        }.bind( this ) );
+        Event.observe( $( 'loginLang' ), 'mouseout', function( event )
+        {
+          $( 'langMenu' ).setAttribute( "aria-hidden", "true" );
+        }.bind( this ) );
+        Event.observe( $( 'loginLang' ), 'focus', function( event )
+        {
+          $( 'langMenu' ).setAttribute( "aria-hidden", "false" );
+        }.bind( this ) );
+        Event.observe( $( 'loginLang' ), 'blur', function( event )
+        {
+          $( 'langMenu' ).setAttribute( "aria-hidden", "true" );
+        }.bind( this ) );
+
+	});
+    </script>
+      
+  <INPUT TYPE="hidden" NAME="target" value="/webapps/login/?action=login">
+
+
+  
+	 
+    <h2>
+      <a href="#"><span>利用可能な言語 :</span></a>
+      <span>利用可能な言語 :</span>
+    </h2>
+
+    <ul id="langMenu" aria-hidden="true" role="menu">
+              <li aria-haspopup="true" role="menuitem"><a href="javascript:loadLocale('en_US');" title="English (United States&#x202D;)&#x202C;" lang="en_US" >English (United States&#x202D;)&#x202C;</a></li>
+
+              <li aria-haspopup="true" role="menuitem"><a href="javascript:loadLocale('ja_JP_Q22019');" title="日本語 (日本)" lang="ja_JP_Q22019" >日本語 (日本)</a></li>
+
+      
+    </ul>
+        <input type="hidden" name="locale">
+
+    
+  
+
+  </form>
+</div>
+
+
+  
+      <div class="clearfix loginBody">
+      <div style="width:auto;max-width:600px;margin:0 auto;padding:5px;text-align:center">
+      <img src="/admin/SSO.png" style="width:100%"/>
+
+<!-- EMBEDDED-WAYF-START -->
+<script type="text/javascript"><!--
+// To use this JavaScript, please access:
+// https://ds.gakunin.nii.ac.jp/WAYF/embedded-wayf.js/snippet.html
+// and copy/paste the resulting HTML snippet to an unprotected web page that 
+// you want the embedded WAYF to be displayed
+
+
+//////////////////// ESSENTIAL SETTINGS ////////////////////
+
+// URL of the WAYF to use
+// Examples: "https://wayf.switch.ch/SWITCHaai/WAYF", "https://wayf-test.switch.ch/aaitest/WAYF";
+// [Mandatory]
+var wayf_URL = "https://ds.gakunin.nii.ac.jp/WAYF";
+
+// EntityID of the Service Provider that protects this Resource
+// Examples: "https://econf.switch.ch/shibboleth", "https://dokeos.unige.ch/shibboleth"
+// [Mandatory]
+var wayf_sp_entityID = "https://bb.kosen-ac.jp/shibboleth-sp";
+
+// Shibboleth Service Provider handler URL
+// Examples: "https://point.switch.ch/Shibboleth.sso", "https://rr.aai.switch.ch/aaitest/Shibboleth.sso"
+// [Mandatory, if wayf_use_discovery_service = false]
+var wayf_sp_handlerURL = "https://bb.kosen-ac.jp/Shibboleth.sso";
+
+// URL on this resource that the user shall be returned to after authentication
+// Examples: "https://econf.switch.ch/aai/home", "https://olat.uzh.ch/my/courses"
+// [Mandatory]
+var wayf_return_url = "https://bb.kosen-ac.jp/webapps/bb-auth-provider-shibboleth-bb_bb60/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fbb.kosen-ac.jp%2Fwebapps%2Fportal%2Fframeset.jsp&authProviderId=_3_1";
+
+
+//////////////////// RECOMMENDED SETTINGS ////////////////////
+
+// Width of the embedded WAYF in pixels or "auto"
+// This is the width of the content only (without padding and border). 
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// width of everything that is drawn.
+// [Optional, default: "auto"]
+var wayf_width = "450";
+
+// Height of the embedded WAYF in pixels or "auto"
+// This is the height of the content only (without padding and border). 
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// height of everything that is drawn.
+// [Optional, default: "auto"]
+var wayf_height = "80";
+
+// Whether to show the checkbox to remember settings for this session
+// [Optional, default: true]
+var wayf_show_remember_checkbox = true;
+
+// Force the user's Home Organisation selection to be remembered for the
+// current browser session. If wayf_show_remember_checkbox is true
+// the checkbox will be shown but will be read only.
+// WARNING: Only use this feature if you know exactly what you are doing
+//          This option will cause problems that are difficult to find 
+//          in case they accidentially select a wrong Home Organisation
+// [Optional, false]
+var wayf_force_remember_for_session = false;
+
+// Logo size
+// Choose whether the small or large logo shall be used
+// [Optional, default: true]
+var wayf_use_small_logo = false;
+
+// Font size
+// [Optional, default: 12]
+var wayf_font_size = 12;
+
+// Font color
+// [Optional, default: #000000]
+var wayf_font_color = '#000000';
+
+// Border color
+// [Optional, default: #00247D]
+var wayf_border_color = '#00247D';
+
+// Background color
+// [Optional, default: #F4F7F7]
+var wayf_background_color = '#F4F7F7';
+
+// Whether to automatically log in user if he has a session/permanent redirect
+// cookie set at central wayf
+// [Optional, default: true]
+var wayf_auto_login = true;
+
+// Whether to hide the WAYF after the user was logged in
+// This requires that the _shib_session_* cookie is set when a user 
+// could be authenticated, which is the default case when Shibboleth is used.
+// For other Service Provider implementations have a look at the setting
+// wayf_check_login_state_function that allows you to customize this
+// [Optional, default: false]
+var wayf_hide_after_login = false;
+
+// Whether or not to show the categories in the drop-down list
+// Possible values are: true or false
+// [Optional, default: true]
+var wayf_show_categories =  true;
+
+// Most used Identity Providers will be shown as top category in the drop down
+// list if this feature is used.
+// [Optional, commented out by default]
+// var wayf_most_used_idps =  new Array("https://aai-logon.unibas.ch/idp/shibboleth", "https://aai.unil.ch/idp/shibboleth");
+
+// Categories of Identity Provider that shall not be shown
+// Possible values are: "hokkaido","tohoku","kanto","chubu","kinki","chugoku","shikoku","kyushu","others", "all"
+// Example of how to hide categories
+// var wayf_hide_categories =  new Array("other", "library");
+// [Optional, commented out by default]
+// var wayf_hide_categories =  new Array();
+
+// EntityIDs of Identity Provider whose category is hidden but that shall be shown anyway
+// If this array is not empty, wayf_show_categories will be disabled because
+// otherwise, unhidden IdPs may be displayed in the wrong category
+// Example of how to unhide certain Identity Providers
+// var wayf_unhide_idps = new Array("https://aai-login.uzh.ch/idp/shibboleth");
+// [Optional, commented out by default]
+// var wayf_unhide_idps = new Array();
+
+// EntityIDs of Identity Provider that shall not be shown at all
+// Example of how to hide certain Identity Provider
+// var wayf_hide_idps = new Array("https://idp.unige.ch/idp/shibboleth", "https://lewotolo.switch.ch/idp/shibboleth");
+// [Optional, commented out by default]
+// var wayf_hide_idps = new Array();
+
+
+//////////////////// ADVANCED SETTINGS ////////////////////
+
+// Use the SAML2/Shibboleth 2 Discovery Service protocol where
+// the user is sent back to the Service Provider after selection
+// of his Home Organisation.
+// This is true by default and it should only be uncommented and set to false
+// if there is a good reason why to use the old and deprecated Shibboleth WAYF
+// protocol instead.
+// [Optional, default: commented out]
+// var wayf_use_discovery_service = false;
+
+// Session Initiator URL of the Service Provider
+// Examples: "https://econf.switch.ch/Shibboleth.sso/DS", "https://dokeos.unige.ch/Shibboleth.sso/DS"
+// This will implicitely be set to wayf_sp_samlDSURL = wayf_sp_handlerURL + "/DS";
+// [Optional, if wayf_use_discovery_service = true 
+//  or if wayf_additional_idps is not empty, default: commented out]
+// var wayf_sp_samlDSURL = wayf_sp_handlerURL + "/Login";
+
+// Default IdP to preselect when central WAYF couldn't guess IdP either
+// This is usually the case the first time ever a user accesses a resource
+// [Optional, default: commented out]
+// var wayf_default_idp = "https://aai.switch.ch/idp/shibboleth";
+
+// Set a custom Assertion Consumer URL instead of
+// the default wayf_sp_handlerURL + '/SAML/POST'
+// Only relevant if wayf_use_discovery_service is false
+// Examples: "https://olat.uzh.ch/shib/samlaa", 
+// This will implicitely be set to wayf_sp_samlACURL = wayf_sp_handlerURL + "/SAML/POST";
+// "https://foodle.feide.no/simplesaml/shib13/sp/AssertionConsumerService.php"
+// [Optional, commented out by default]
+// var wayf_sp_samlACURL = "https://maclh.switch.ch/foo/bar";
+
+// Overwites the text of the checkbox if
+// wayf_show_remember_checkbox is set to true
+// [Optional, commented out by default]
+// var wayf_overwrite_checkbox_label_text = 'Save setting for today';
+
+// Overwrites the text of the submit button
+// [Optional, commented out by default]
+// var wayf_overwrite_submit_button_text = 'Go';
+
+// Overwrites the intro text above the drop-down list
+// [Optional, commented out by default]
+// var wayf_overwrite_intro_text = 'Select your Home Organisation to log in';
+
+// Overwrites the category name of the most used IdP category in the drop-down list
+// [Optional, commented out by default]
+// var wayf_overwrite_most_used_idps_text = 'Most popular';
+
+
+// Whether to hide the WAYF after the user was logged in
+// This requires that the _shib_session_* cookie is set when a user 
+// could be authenticated
+// If you want to hide the embedded WAYF completely, uncomment
+// the property and set it to "". This then won't draw anything
+// [Optional, default commented out: You are already logged in]
+// var wayf_logged_in_messsage = "";
+
+// Provide the name of a JavaScript function that checks whether the user
+// already is logged in. The function should return true if the user is logged
+// in or false otherwise. If the user is logged in, the Embedded WAYF will
+// hide itself or draw a custom message depending on the 
+// setting wayf_logged_in_messsage
+// The function you specify has of course to be implemented by yourself!
+// [Optional, commented out by default]
+// var wayf_check_login_state_function = function() { 
+// if (# specify user-is-logged-in condition#)
+//   return true;
+// else 
+//   return false;
+// }
+
+// EntityIDs, Names and SSO URLs of Identity Providers from other federations 
+// that shall be added to the drop-down list
+// The IdPs will be displayed in the sequence they are defined
+// [Optional, commented out by default]
+// var wayf_additional_idps = [ ];
+
+// Example of how to add Identity Provider from other federations
+// var wayf_additional_idps = [ 
+//        
+//        {name:"International University X",
+//        entityID:"urn:mace:switch.ch:SWITCHaai:example.university.org",
+//        SAML1SSOurl:"https://int.univ.org/shibboleth-idp/SSO"},
+//
+//        {name:"Some Other University",
+//        entityID:"https://other.univ.edu/idp/shibboleth",
+//        SAML1SSOurl:"https://other.univ.edu/shibboleth-idp/SSO"},
+// ];
+
+// The list which is the target of incremental search is extracted to IdP acquired by DiscpFeed
+// URL of DiscpFeed is set up
+// var wayf_discofeed_url = "https://point.switch.ch/Shibboleth.sso/DiscoFeed";
+// [Optional, commented out by default]
+// var wayf_discofeed_url = "";
+var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
+
+// The path of Cookie created by SP is set. As for default configuration, 
+// the path of an access place is set.
+// var wayf_sp_cookie_path = "/";
+// [Optional, commented out by default]
+// var wayf_sp_cookie_path = "";
+
+// Height of the embedded WAYF IdP List in pixels
+// [Optional, default: 150]
+// var wayf_list_height = 150;
+
+
+//////////////////// ADDITIONAL CSS CUSTOMIZATIONS ////////////////////
+
+// To further customize the appearance of the Embedded WAYF you could
+// define CSS rules for the following CSS IDs that are used within the 
+// Embedded WAYF:
+// #wayf_div                     - Container for complete Embedded WAYF
+// #wayf_logo_div                - Container for logo
+// #wayf_logo                    - Image for logo
+// #wayf_intro_div               - Container of drop-down list intro label
+// #wayf_intro_label             - Label of intro text
+// #IdPList                      - The form element
+// #user_idp                     - Select element for drop-down list
+// #wayf_remember_checkbox_div   - Container of checkbox and its label
+// #wayf_remember_checkbox       - Checkbox for remembering settings for session
+// #wayf_remember_checkbox_label - Text of checkbox
+// #wayf_submit_button           - Submit button
+//
+// Use these CSS IDs carefully and at own risk because future updates could
+// interfere with the rules you created and the IDs may change without notice!
+
+
+//-->
+</script>
+
+<script type="text/javascript" charset="UTF-8"><!--
+    document.write('<script type="text/javascript" src="https://ds.gakunin.nii.ac.jp/WAYF/embedded-wayf.js?' + (new Date().getTime()) + '"></scr'+'ipt>');
+//-->
+</script>
+
+<noscript>
+  <!-- 
+  Fallback to Shibboleth DS session initiator for non-JavaScript users 
+  You should set the value of the target GET parameter to an URL-encoded 
+  absolute URL that points to a Shibboleth protected web page where the user 
+  is logged in into your application.
+  -->
+  <p>
+    <strong>Login:</strong> Javascript is not available for your web browser. Therefore, please <a href="/Shibboleth.sso/DS?target=">proceed manually</a>.
+  </p>
+</noscript>
+
+<!-- EMBEDDED-WAYF-END -->
+</div>
+        <div id="loginBox">
+          <p style="font-size:0.9em; margin-top:10pt">&#36969;&#20999;&#12394;&#25152;&#23646;&#27231;&#38306;&#12364;&#34920;&#31034;&#12373;&#12428;&#12394;&#12356;&#22580;&#21512;&#12395;&#12399;&#12522;&#12475;&#12483;&#12488;&#12522;&#12531;&#12463;&#12434;&#12463;&#12522;&#12483;&#12463;&#12375;&#12390;&#12363;&#12425;&#12372;&#21033;&#29992;&#12367;&#12384;&#12373;&#12356;&#12290;</p>
+          <img src="/admin/LocalLogin.png" style="align:center;width:100%"/>
+          
+
+
+<noscript>
+  <div class="receipt bad editmode alert-box alert">Blackboardアプリケーションが機能するには、ブラウザでJavaScriptを有効にしてください。</div>
+</noscript>
+
+<form action="/webapps/login/" onsubmit="return validate_form( this, false, true );" method="POST" name="login" >
+  
+<script type="text/javascript">
+ function login_openForgotPassword( url )
+ {
+   var passwordWin = window.open( url, 'forgotPasswordWindow', 'menubar=1,resizable=1,scrollbars=1,status=1,width=850,height=480' );
+   passwordWin.focus();
+ }
+
+  FastInit.addOnLoad(function()
+ {
+   
+  if( typeof ClientCache !== 'undefined' )
+  {
+    ClientCache.clear();
+  }
+      var startingJSessionCookie = getCookie("JSESSIONID");
+  var guestLocaleCookie = getCookie("guest.session.locale");
+      deleteCookie("JSESSIONID", "/@@", null, true);
+      deleteCookie("JSESSIONID", "/courses", null, true);
+      deleteCookie("JSESSIONID", "/sessions", null, true);
+      deleteCookie("JSESSIONID", "/systemdata", null, true);
+      deleteCookie("JSESSIONID", "/images", null, true);
+      deleteCookie("JSESSIONID", "/reportbranding", null, true);
+      deleteCookie("JSESSIONID", "/reports", null, true);
+      deleteCookie("JSESSIONID", "/modules", null, true);
+      deleteCookie("JSESSIONID", "/groupjs", null, true);
+      deleteCookie("JSESSIONID", "/branding", null, true);
+      deleteCookie("JSESSIONID", "/sponsors", null, true);
+      deleteCookie("JSESSIONID", "/course_image_main_images", null, true);
+      deleteCookie("JSESSIONID", "/course_image_2_images", null, true);
+      deleteCookie("JSESSIONID", "/course_image_nav_images", null, true);
+      deleteCookie("JSESSIONID", "/org_image_main_images", null, true);
+      deleteCookie("JSESSIONID", "/org_image_2_images", null, true);
+      deleteCookie("JSESSIONID", "/org_image_nav_images", null, true);
+      deleteCookie("JSESSIONID", "/avatar", null, true);
+      deleteCookie("JSESSIONID", "/deployment", null, true);
+      deleteCookie("JSESSIONID", "/content_area", null, true);
+      deleteCookie("JSESSIONID", "/portfolio", null, true);
+      deleteCookie("JSESSIONID", "/evidence_area", null, true);
+      deleteCookie("JSESSIONID", "/public", null, true);
+      deleteCookie("JSESSIONID", "/webapps/axis", null, true);
+      deleteCookie("JSESSIONID", "/webapps/chalkbox", null, true);
+      deleteCookie("JSESSIONID", "", null, true);
+      deleteCookie("JSESSIONID", "/webapps/login", null, true);
+      deleteCookie("JSESSIONID", "/webapps/soap", null, true);
+      deleteCookie("JSESSIONID", "/webapps/taglibs", null, true);
+      deleteCookie("JSESSIONID", "/webapps/ws", null, true);
+      deleteCookie("JSESSIONID", "/webapps/wysiwyg", null, true);
+      deleteCookie("JSESSIONID", "/xythosremoteadmin", null, true);
+      deleteCookie("JSESSIONID", "/bbcswebdav", null, true);
+      deleteCookie("JSESSIONID", "/webapps/cmsmain", null, true);
+      deleteCookie("JSESSIONID", "/webapps/xythoswfs", null, true);
+      deleteCookie("JSESSIONID", "/admin", null, true);
+      deleteCookie("JSESSIONID", "/colorpalettes", null, true);
+      deleteCookie("JSESSIONID", "/coursethemes", null, true);
+      deleteCookie("JSESSIONID", "/common", null, true);
+      deleteCookie("JSESSIONID", "/fonts", null, true);
+      deleteCookie("JSESSIONID", "/javascript", null, true);
+      deleteCookie("JSESSIONID", "/lib", null, true);
+      deleteCookie("JSESSIONID", "/login", null, true);
+      deleteCookie("JSESSIONID", "/themes", null, true);
+      deleteCookie("JSESSIONID", "/ui", null, true);
+      deleteCookie("JSESSIONID", "/ui-ultra", null, true);
+      deleteCookie("JSESSIONID", "/learn/api", null, true);
+      deleteCookie("JSESSIONID", "/webapps/dataIntegration", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-gate-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/goal", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-social-learning-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/software-updates", null, true);
+      deleteCookie("JSESSIONID", "/webapps/rubric", null, true);
+      deleteCookie("JSESSIONID", "/webapps/streamViewer", null, true);
+      deleteCookie("JSESSIONID", "/webapps/submission-services", null, true);
+      deleteCookie("JSESSIONID", "/webapps/api-gateway", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-content-model-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-group-mgmt-LEARN", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-ultra-conversion", null, true);
+      deleteCookie("JSESSIONID", "/webapps/gradebook", null, true);
+      deleteCookie("JSESSIONID", "/webapps/videointegration", null, true);
+      deleteCookie("JSESSIONID", "/webapps/assessment", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-common-styles-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-xss-filter-whitelist-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-xss-filter-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/vtbe-tinymce", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbcms", null, true);
+      deleteCookie("JSESSIONID", "/webapps/inline-grading", null, true);
+      deleteCookie("JSESSIONID", "/webapps/spreview", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-xss-input-validation-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/portfolio", null, true);
+      deleteCookie("JSESSIONID", "/webapps/caliper", null, true);
+      deleteCookie("JSESSIONID", "/webapps/partner-cloud", null, true);
+      deleteCookie("JSESSIONID", "/webapps/operational-data-store", null, true);
+      deleteCookie("JSESSIONID", "/webapps/Bb-wiki-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/discussionboard", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-selfpeer-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/allyintegration", null, true);
+      deleteCookie("JSESSIONID", "/webapps/assignment", null, true);
+      deleteCookie("JSESSIONID", "/webapps/cloud-profiles", null, true);
+      deleteCookie("JSESSIONID", "/webapps/taskprogress", null, true);
+      deleteCookie("JSESSIONID", "/webapps/evidenceCollection", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-mygrades-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/blogs-journals", null, true);
+      deleteCookie("JSESSIONID", "/webapps/consulting-central", null, true);
+      deleteCookie("JSESSIONID", "/webapps/attendance", null, true);
+      deleteCookie("JSESSIONID", "/webapps/am-crslist-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/am-dbdownload-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/am-assignment-utility-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-1027720613048-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/auth-saml", null, true);
+      deleteCookie("JSESSIONID", "/webapps/telemetry", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbgs-goal-performance-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/cloudstorageintegration", null, true);
+      deleteCookie("JSESSIONID", "/webapps/KRD-rest-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/portal", null, true);
+      deleteCookie("JSESSIONID", "/webapps/blackboard", null, true);
+      deleteCookie("JSESSIONID", "/webapps/scsk-sisdatatool-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-data-integration-lis-final-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbgs-vitalsource-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/date-management", null, true);
+      deleteCookie("JSESSIONID", "/webapps/cmsadmin", null, true);
+      deleteCookie("JSESSIONID", "/webapps/plugins", null, true);
+      deleteCookie("JSESSIONID", "/webapps/jjcd-jjcds-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/scsk-booklooper-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/achievements", null, true);
+      deleteCookie("JSESSIONID", "/webapps/scsk-ToolByCourseLink-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/enterpriseSurvey", null, true);
+      deleteCookie("JSESSIONID", "/webapps/social-connector", null, true);
+      deleteCookie("JSESSIONID", "/webapps/retention", null, true);
+      deleteCookie("JSESSIONID", "/webapps/calendar", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-alerts-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-theme-diff-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/item-analysis", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-cx-ext-angel-plgnhndl-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-nautilus-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/privacy-disclosure", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-evidence-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-data-integration-flatfile-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-auth-provider-shibboleth-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/scor-scormengine-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbcxcommoncartridge", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbtextbook", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-mashups-youtube-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-mashups-slideshare-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-mashups-flickr-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/mdb-sa-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bbgs-nbc-content-integration-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/bb-cntplayer-bb_bb60", null, true);
+      deleteCookie("JSESSIONID", "/webapps/searchwidgets", null, true);
+    
+  if (guestLocaleCookie != null)
+  {
+    setCookie("guest.session.locale", guestLocaleCookie);
+  }
+  setCookie("JSESSIONID", startingJSessionCookie);
+   });
+ </script>
+
+<div id="loginFormTitle">
+  <h2>アカウントはありますか？</h2>
+</div>
+
+ <div id="loginFormText">
+   <p>資格情報を入力して、下の[<b>ログイン</b>]ボタンをクリックしてください。
+    </p>
+ </div>
+
+<div id="loginFormFields" class="clearfix">
+  <ul id="loginFormList" class="clearfix">
+    <li class="clearfix">
+      <label for="user_id">ユーザ名</label>
+      <input type="text" name="user_id" id="user_id" size="25" maxlength="50" autocomplete="off"/>
+    </li>
+    <li class="clearfix">
+      <label for="password">パスワード</label>
+      <input size="25" name="password" id="password" type="password" autocomplete="off"/>
+    </li>
+    <li class="clearfix">
+          <input id="entry-login" type="submit" value="ログイン" name="login" class="button expand"/>
+        </li>
+  </ul>
+
+
+
+
+</div>
+
+
+
+  <input type="hidden" name="action" value="login" />
+  <input type="hidden" name="new_loc" value="" />
+  <input type='hidden' name='blackboard.platform.security.NonceUtil.nonce' value='b16208a4-5e48-4bb9-91ee-3b6d08e61a98'>
+</form>
+  <div id="loginRedirectProviders">
+  <button id="redirectProvidersDropdownButton" class="button dropdown expand">サードパーティのアカウントでサインイン</button>
+  <ul id="loginRedirectProviderList">
+           <li><a href="/webapps/bb-auth-provider-shibboleth-bb_bb60/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fbb.kosen-ac.jp%2Fwebapps%2Fportal%2Fexecute%2FdefaultTab&authProviderId=_3_1" ><div class="defaultProviderIcon"></div>.</a></li>
+         </ul>
+ </div>
+ <script type="text/javascript">
+   var providerListDropdownButton = $('redirectProvidersDropdownButton');
+   var providerList = $('loginRedirectProviderList');
+   // Open/ close providers list dropdown
+   providerListDropdownButton.on('click', function(event, element) {
+     providerList.toggleClassName('open');
+     providerList.writeAttribute('aria-hidden', !providerList.hasClassName( 'open' ));
+   });
+
+   // Close provider list when clicking elsewhere on the page
+   $$("body").first().on('click', function(event) {
+     if (!$(event.target).hasClassName('dropdown') && providerList.hasClassName('open')){
+       providerList.removeClassName('open');
+     }
+   });
+ </script>
+</div>
+
+      </div>
+
+      
+
+<div id="loginImage"><img src="/images/ci/logos/Gateway_Learn.jpg" alt="Blackboard Learn" /></div>
+<div id="loginText">
+<p>Blackboard e-Educationプラットフォームへようこそ&#8212;このプラットフォームは、人々とテクノロジーを結び付けることによって、あらゆる場所での教育改革を実現できるように設計されています。</p>
+</div></div>
+
+  </div>
+
+  
+  
+<div id="copyright" class="clearfix">
+  <script type="text/javascript">
+      function showCopyrightDetail(){
+        if(document.getElementById('copyrightDetail').style.display=="none" || document.getElementById('copyrightDetail').style.display=="")    {        document.getElementById('copyrightDetail').style.display="block";    }
+        else    {        document.getElementById('copyrightDetail').style.display="none";    }}
+  </script>
+  <div class="newCopyright">
+      	  <div class="logo">
+  	    <img src="/images/ci/logos/bb_signature/Bb_Signature_StdMed.png" alt="Blackboard Learn" />
+  	  </div>
+  	  	<div class="legal">
+  		&copy; 1997-2020 Blackboard Inc. All Rights Reserved. U.S. Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.
+  	</div>
+  	      <div class="additionalInfo">
+        <p><a href="http://access.blackboard.com" id="accessibilityLink">アクセシビリティ情報</a></p>
+              </div>
+  	  </div>
+
+  </div></div>
+
+
+</div>
+
+
+
+
+  <script type="text/javascript">page.bundle.addKey('inlineconfirmation.close','閉じる');page.bundle.addKey('inlineconfirmation.refresh','最新の情報に更新');page.bundle.addKey('hidden.link.close.menu','メニューの最後。クリックして関連付けられた項目に戻ります。');page.bundle.addKey('hidden.link.close.form','フォームの最後。クリックして関連付けられた項目に戻ります。');page.bundle.addKey('lightbox.loading','ロードしています...');page.bundle.addKey('yt.stopped','停止 :');page.bundle.addKey('yt.playing','再生中 :');page.bundle.addKey('yt.cued','キュー :');page.bundle.addKey('yt.buffering','バッファリング :');page.bundle.addKey('yt.paused','一時停止 :');page.bundle.addKey('yt.ended','終了済み :');page.bundle.addKey('yt.play','再生');page.bundle.addKey('yt.pause','一時停止');page.bundle.addKey('yt.mute','ミュート');page.bundle.addKey('yt.unmute','ミュート解除');page.bundle.addKey('lightbox.overlay','{0} が、現在のページに重なるライトボックスとして開きました。');page.bundle.addKey('display.playerControls','プレーヤー設定');page.bundle.addKey('display.videoPlayerControls','動画プレーヤー設定');page.bundle.addKey('display.play','再生');page.bundle.addKey('display.stop','停止');page.bundle.addKey('display.volumeUp','音量を上げる');page.bundle.addKey('display.volumeDown','音量を下げる');page.bundle.addKey('display.mute','ミュート');page.bundle.addKey('display.videoStatus','動画ステータス');page.bundle.addKey('display.closePlayerControls','プレーヤー設定を閉じる');page.bundle.addKey('display.embeddedVideoPlayer','埋め込み動画プレーヤー');page.bundle.addKey('display.of','/');page.bundle.addKey('display.view.on.flickr','Flickrの写真を表示');page.bundle.addKey('mashups.content.data.msg','マッシュアップコンテンツを表示できません。システムが無効なURLを検知したときにこの問題が発生します。この問題を解決するために、マッシュアップ項目を削除し、再試行してください。');page.bundle.addKey('contextmenu.frame.title','メニューフレーム');page.bundle.addKey('frameset.contentframe.title','コンテンツ');page.bundle.addKey('common.pair.paren','{0} ({1})');page.bundle.addKey('tool.activity.description','アクティビティの更新');page.bundle.addKey('accessDeniedMsg','アクセス拒否');</script>
+  <script type="text/javascript">
+    function showPrivacyPolicy() {
+      cookieConsent = new CookieConsent('/webapps/privacy-disclosure/');
+      cookieConsent.showPolicy( 'blackboard.platform.security.NonceUtil.nonce=login', true );
+    }
+  </script>
+
+  <script type="text/javascript">
+      function loadLoginPage()
+      {
+    	  if ( top != self )
+    	  {
+    		  top.location.replace( self.location.href );
+    		}
+    	  if(document.forms.login.user_id != undefined)
+    		{
+    		  document.forms.login.user_id.focus();
+    		}
+    	  setTimeout("triggerScreenreaderAlert()", 500);
+      }
+      
+      function triggerScreenreaderAlert()
+      {
+    	if ( document.getElementById( 'loginErrorMessage' ) )
+  	    {
+    	  $( 'loginErrorMessage' ).update( $('loginErrorMessage').innerHTML );
+  	    }
+      }
+    </script>
+  
+  <script type='text/javascript'>globalNavigation.init(); Event.observe(window, 'resize', globalNavigation.onResize);</script>
+  <script type='text/javascript'> social.Profile.MY_PROFILE_TOOL_ID='BB-CORE_____myProfile'; social.Profile.MY_PROFILE_TOOL_URI='/webapps/bb-social-learning-bb_bb60/execute/mybb?cmd=display&toolId=BB-CORE_____myProfile&location='; </script>
+ 
+   <script type="text/javascript">
+   FastInit.addOnLoad( function()
+   {
+            if ( window.DWREngine )
+       {
+        try {DWREngine.beginBatch();} catch(ignore) {}
+       } 
+                welcomeOverlay.initOverlay();
+                                                             tool_service.init ('300000', 'Suppress-Session-Timestamp-Update' );
+                                                             if (typeof(initEditors) == 'function') { initEditors(); }; 
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             quickLinks.createHelper();
+                                                                  if ( window.DWREngine )
+       {
+         try {DWREngine.endBatch();} catch(ignore) {}
+       }
+                          BrowserSpecific.registerListeners();
+                loadLoginPage();
+               });
+   </script>
+       
+</body>
+</html>
