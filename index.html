@@ -11,7 +11,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="-1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
+
   <link rel="SHORTCUT ICON" type="image/x-icon" href="/ui/bb-icon2.ico">
      <link rel="stylesheet" type="text/css" href="/common/shared.css?v=3700.0.7-rel.21+54e64bd" id="css_0">
      <link rel="stylesheet" type="text/css" href="/branding/themes/as_2016_kosen_6/theme.css?v=3700.0.7-rel.21+54e64bd" id="css_1">
@@ -288,25 +288,25 @@ _init_bundle_LOCALE_SETTINGS();
       <div id="loginHeader" class="clearfix">
         <h1 class="hideoff">Blackboard Learn &#8482;</h1>
         <img src="/images/ci/logos/Bb_newLogo_060.png" alt="Blackboard Learn &#8482;" class="productLogo" />
-        
+
 <h2 class="hideoff">オプションの表示</h2>
 <ul>
   <li class="font-size">
-    <img src="/images/ci/ng/fonts.gif" alt="" /> 
-    <a href="#" title="テキストサイズの変更" 
+    <img src="/images/ci/ng/fonts.gif" alt="" />
+    <a href="#" title="テキストサイズの変更"
           onClick="page.showChangeTextSizeHelp()">テキストサイズの変更</a>
   </li>
   <li class="contrast">
-    <img src="/images/ci/ng/contrast.gif" alt="" /> 
+    <img src="/images/ci/ng/contrast.gif" alt="" />
     <a href="#" title="ハイコントラスト設定" onclick="page.showAccessibilityOptions(); return false;">ハイコントラスト設定</a>
   </li>
 </ul>
 </div>
 
       <div id="loginLang" class="clearfix">
-        
+
   <form action="/webapps/portal/execute/changeLocale" method="post" name="locale_picker" target="_top">
-  
+
       <script>
       function loadLocale(code)
       {
@@ -333,12 +333,12 @@ _init_bundle_LOCALE_SETTINGS();
 
 	});
     </script>
-      
+
   <INPUT TYPE="hidden" NAME="target" value="/webapps/login/?action=login">
 
 
-  
-	 
+
+
     <h2>
       <a href="#"><span>利用可能な言語 :</span></a>
       <span>利用可能な言語 :</span>
@@ -349,18 +349,18 @@ _init_bundle_LOCALE_SETTINGS();
 
               <li aria-haspopup="true" role="menuitem"><a href="javascript:loadLocale('ja_JP_Q22019');" title="日本語 (日本)" lang="ja_JP_Q22019" >日本語 (日本)</a></li>
 
-      
+
     </ul>
         <input type="hidden" name="locale">
 
-    
-  
+
+
 
   </form>
 </div>
 
 
-  
+
       <div class="clearfix loginBody">
       <div style="width:auto;max-width:600px;margin:0 auto;padding:5px;text-align:center">
       <img src="/admin/SSO.png" style="width:100%"/>
@@ -369,7 +369,7 @@ _init_bundle_LOCALE_SETTINGS();
 <script type="text/javascript"><!--
 // To use this JavaScript, please access:
 // https://ds.gakunin.nii.ac.jp/WAYF/embedded-wayf.js/snippet.html
-// and copy/paste the resulting HTML snippet to an unprotected web page that 
+// and copy/paste the resulting HTML snippet to an unprotected web page that
 // you want the embedded WAYF to be displayed
 
 
@@ -399,15 +399,15 @@ var wayf_return_url = "https://bb.kosen-ac.jp/webapps/bb-auth-provider-shibbolet
 //////////////////// RECOMMENDED SETTINGS ////////////////////
 
 // Width of the embedded WAYF in pixels or "auto"
-// This is the width of the content only (without padding and border). 
-// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// This is the width of the content only (without padding and border).
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual
 // width of everything that is drawn.
 // [Optional, default: "auto"]
 var wayf_width = "450";
 
 // Height of the embedded WAYF in pixels or "auto"
-// This is the height of the content only (without padding and border). 
-// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// This is the height of the content only (without padding and border).
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual
 // height of everything that is drawn.
 // [Optional, default: "auto"]
 var wayf_height = "80";
@@ -420,7 +420,7 @@ var wayf_show_remember_checkbox = true;
 // current browser session. If wayf_show_remember_checkbox is true
 // the checkbox will be shown but will be read only.
 // WARNING: Only use this feature if you know exactly what you are doing
-//          This option will cause problems that are difficult to find 
+//          This option will cause problems that are difficult to find
 //          in case they accidentially select a wrong Home Organisation
 // [Optional, false]
 var wayf_force_remember_for_session = false;
@@ -452,7 +452,7 @@ var wayf_background_color = '#F4F7F7';
 var wayf_auto_login = true;
 
 // Whether to hide the WAYF after the user was logged in
-// This requires that the _shib_session_* cookie is set when a user 
+// This requires that the _shib_session_* cookie is set when a user
 // could be authenticated, which is the default case when Shibboleth is used.
 // For other Service Provider implementations have a look at the setting
 // wayf_check_login_state_function that allows you to customize this
@@ -505,7 +505,7 @@ var wayf_show_categories =  true;
 // Session Initiator URL of the Service Provider
 // Examples: "https://econf.switch.ch/Shibboleth.sso/DS", "https://dokeos.unige.ch/Shibboleth.sso/DS"
 // This will implicitely be set to wayf_sp_samlDSURL = wayf_sp_handlerURL + "/DS";
-// [Optional, if wayf_use_discovery_service = true 
+// [Optional, if wayf_use_discovery_service = true
 //  or if wayf_additional_idps is not empty, default: commented out]
 // var wayf_sp_samlDSURL = wayf_sp_handlerURL + "/Login";
 
@@ -517,7 +517,7 @@ var wayf_show_categories =  true;
 // Set a custom Assertion Consumer URL instead of
 // the default wayf_sp_handlerURL + '/SAML/POST'
 // Only relevant if wayf_use_discovery_service is false
-// Examples: "https://olat.uzh.ch/shib/samlaa", 
+// Examples: "https://olat.uzh.ch/shib/samlaa",
 // This will implicitely be set to wayf_sp_samlACURL = wayf_sp_handlerURL + "/SAML/POST";
 // "https://foodle.feide.no/simplesaml/shib13/sp/AssertionConsumerService.php"
 // [Optional, commented out by default]
@@ -542,7 +542,7 @@ var wayf_show_categories =  true;
 
 
 // Whether to hide the WAYF after the user was logged in
-// This requires that the _shib_session_* cookie is set when a user 
+// This requires that the _shib_session_* cookie is set when a user
 // could be authenticated
 // If you want to hide the embedded WAYF completely, uncomment
 // the property and set it to "". This then won't draw anything
@@ -552,26 +552,26 @@ var wayf_show_categories =  true;
 // Provide the name of a JavaScript function that checks whether the user
 // already is logged in. The function should return true if the user is logged
 // in or false otherwise. If the user is logged in, the Embedded WAYF will
-// hide itself or draw a custom message depending on the 
+// hide itself or draw a custom message depending on the
 // setting wayf_logged_in_messsage
 // The function you specify has of course to be implemented by yourself!
 // [Optional, commented out by default]
-// var wayf_check_login_state_function = function() { 
+// var wayf_check_login_state_function = function() {
 // if (# specify user-is-logged-in condition#)
 //   return true;
-// else 
+// else
 //   return false;
 // }
 
-// EntityIDs, Names and SSO URLs of Identity Providers from other federations 
+// EntityIDs, Names and SSO URLs of Identity Providers from other federations
 // that shall be added to the drop-down list
 // The IdPs will be displayed in the sequence they are defined
 // [Optional, commented out by default]
 // var wayf_additional_idps = [ ];
 
 // Example of how to add Identity Provider from other federations
-// var wayf_additional_idps = [ 
-//        
+// var wayf_additional_idps = [
+//
 //        {name:"International University X",
 //        entityID:"urn:mace:switch.ch:SWITCHaai:example.university.org",
 //        SAML1SSOurl:"https://int.univ.org/shibboleth-idp/SSO"},
@@ -588,7 +588,7 @@ var wayf_show_categories =  true;
 // var wayf_discofeed_url = "";
 var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 
-// The path of Cookie created by SP is set. As for default configuration, 
+// The path of Cookie created by SP is set. As for default configuration,
 // the path of an access place is set.
 // var wayf_sp_cookie_path = "/";
 // [Optional, commented out by default]
@@ -602,7 +602,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 //////////////////// ADDITIONAL CSS CUSTOMIZATIONS ////////////////////
 
 // To further customize the appearance of the Embedded WAYF you could
-// define CSS rules for the following CSS IDs that are used within the 
+// define CSS rules for the following CSS IDs that are used within the
 // Embedded WAYF:
 // #wayf_div                     - Container for complete Embedded WAYF
 // #wayf_logo_div                - Container for logo
@@ -629,10 +629,10 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 </script>
 
 <noscript>
-  <!-- 
-  Fallback to Shibboleth DS session initiator for non-JavaScript users 
-  You should set the value of the target GET parameter to an URL-encoded 
-  absolute URL that points to a Shibboleth protected web page where the user 
+  <!--
+  Fallback to Shibboleth DS session initiator for non-JavaScript users
+  You should set the value of the target GET parameter to an URL-encoded
+  absolute URL that points to a Shibboleth protected web page where the user
   is logged in into your application.
   -->
   <p>
@@ -645,7 +645,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
         <div id="loginBox">
           <p style="font-size:0.9em; margin-top:10pt">&#36969;&#20999;&#12394;&#25152;&#23646;&#27231;&#38306;&#12364;&#34920;&#31034;&#12373;&#12428;&#12394;&#12356;&#22580;&#21512;&#12395;&#12399;&#12522;&#12475;&#12483;&#12488;&#12522;&#12531;&#12463;&#12434;&#12463;&#12522;&#12483;&#12463;&#12375;&#12390;&#12363;&#12425;&#12372;&#21033;&#29992;&#12367;&#12384;&#12373;&#12356;&#12290;</p>
           <img src="/admin/LocalLogin.png" style="align:center;width:100%"/>
-          
+
 
 
 <noscript>
@@ -653,7 +653,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 </noscript>
 
 <form action="/webapps/login/" onsubmit="return validate_form( this, false, true );" method="POST" name="login" >
-  
+
 <script type="text/javascript">
  function login_openForgotPassword( url )
  {
@@ -663,7 +663,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 
   FastInit.addOnLoad(function()
  {
-   
+
   if( typeof ClientCache !== 'undefined' )
   {
     ClientCache.clear();
@@ -800,7 +800,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
       deleteCookie("JSESSIONID", "/webapps/bbgs-nbc-content-integration-bb_bb60", null, true);
       deleteCookie("JSESSIONID", "/webapps/bb-cntplayer-bb_bb60", null, true);
       deleteCookie("JSESSIONID", "/webapps/searchwidgets", null, true);
-    
+
   if (guestLocaleCookie != null)
   {
     setCookie("guest.session.locale", guestLocaleCookie);
@@ -814,7 +814,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 </div>
 
  <div id="loginFormText">
-   <p>資格情報を入力して、下の[<b>ログイン</b>]ボタンをクリックしてください。
+   <p>必要な胸板の数を入力して、下の[<b>ログイン</b>]ボタンを連打してください。
     </p>
  </div>
 
@@ -870,17 +870,17 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
 
       </div>
 
-      
+
 
 <div id="loginImage"><img src="/images/ci/logos/Gateway_Learn.jpg" alt="Blackboard Learn" /></div>
 <div id="loginText">
-<p>Blackboard e-Educationプラットフォームへようこそ&#8212;このプラットフォームは、人々とテクノロジーを結び付けることによって、あらゆる場所での教育改革を実現できるように設計されています。</p>
+<p>Blackboard e-Educationプラットフォームへようこそ&#8212;このプラットフォームは、マチャアキとテクノロジー、あいさつとMr.丸山を結び付けることによって、あらゆる場所での発作的な自主探究を実現できるように設計されています。</p>
 </div></div>
 
   </div>
 
-  
-  
+
+
 <div id="copyright" class="clearfix">
   <script type="text/javascript">
       function showCopyrightDetail(){
@@ -928,7 +928,7 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
     		}
     	  setTimeout("triggerScreenreaderAlert()", 500);
       }
-      
+
       function triggerScreenreaderAlert()
       {
     	if ( document.getElementById( 'loginErrorMessage' ) )
@@ -937,21 +937,21 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
   	    }
       }
     </script>
-  
+
   <script type='text/javascript'>globalNavigation.init(); Event.observe(window, 'resize', globalNavigation.onResize);</script>
   <script type='text/javascript'> social.Profile.MY_PROFILE_TOOL_ID='BB-CORE_____myProfile'; social.Profile.MY_PROFILE_TOOL_URI='/webapps/bb-social-learning-bb_bb60/execute/mybb?cmd=display&toolId=BB-CORE_____myProfile&location='; </script>
- 
+
    <script type="text/javascript">
    FastInit.addOnLoad( function()
    {
             if ( window.DWREngine )
        {
         try {DWREngine.beginBatch();} catch(ignore) {}
-       } 
+       }
                 welcomeOverlay.initOverlay();
                                                              tool_service.init ('300000', 'Suppress-Session-Timestamp-Update' );
-                                                             if (typeof(initEditors) == 'function') { initEditors(); }; 
-                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             if (typeof(initEditors) == 'function') { initEditors(); };
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); };
                                                              quickLinks.createHelper();
                                                                   if ( window.DWREngine )
        {
@@ -961,6 +961,6 @@ var wayf_discofeed_url = "https://bb.kosen-ac.jp/admin/IdP-List.js";
                 loadLoginPage();
                });
    </script>
-       
+
 </body>
 </html>
